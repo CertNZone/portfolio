@@ -33,7 +33,7 @@ header {
     padding: 5px;
     border-radius: 25px;
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,25,121,1) 35%, rgba(241,0,255,1) 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,18,32,1) 35%, rgba(60,12,107,1) 100%);
 }
 
 .field_title {
