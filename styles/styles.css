@@ -16,6 +16,10 @@ header {
     font-weight: 400;
 }
 
+strong {
+    color: #56208A;
+}
+
 .nav-bar{
     display: flex;
 
@@ -28,12 +32,12 @@ header {
 }
 
 .field {
-    height: 100px;
-    width: 300px;
+    height: auto;
+    width: 500px;
     padding: 5px;
     border-radius: 25px;
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,18,32,1) 35%, rgba(60,12,107,1) 100%);
+    background: linear-gradient(180deg, rgba(60,12,107,1) 10%, rgba(0,18,32,1) 100%);
 }
 
 .field_title {
