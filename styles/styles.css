@@ -1,29 +1,23 @@
 * {
     box-sizing: border-box;
-    color: pink;
+    /* color: rgb(241, 206, 244); */
+    color: #D6C9E3;
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 body {
-    background-image: url("layered-waves-haikei.svg");
-    //background:rgb(2,0,36);
-    //background: cover radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(102,9,121,1) 13%, rgba(9,9,80,1) 37%); 
-}
+    /* background-image: url("layered-waves-haikei.svg"); */
 
-header {
-    background-color: rgba(2,0,36,1);
-    border-bottom: 2px solid aqua;
-    font-weight: 400;
+    /* background:rgb(2,0,36); */
+    /* background: cover radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(102,9,121,1) 13%, rgba(9,9,80,1) 37%); */
+
+    background-color: #001220;
 }
 
 strong {
-    color: #56208A;
-}
-
-.nav-bar{
-    display: flex;
-
+    /* color: #56208A; */
+    color: #653495;
 }
 
 .flex-container {
@@ -32,15 +26,24 @@ strong {
     justify-content:space-around;
 }
 
-.field {
+/* .field {
     height: auto;
     width: 500px;
     padding: 5px;
     border-radius: 25px;
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(60,12,107,1) 10%, rgba(0,18,32,1) 100%);
-}
+} */
 
 .field_title {
     text-align: center;
+}
+
+.svg-container {
+    width: 100%;
+    max-height: 25%;
+}
+
+svg {
+    max-height: 25%;
 }
