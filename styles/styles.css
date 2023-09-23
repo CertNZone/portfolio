@@ -11,7 +11,7 @@ body {
 
     /* background:rgb(2,0,36); */
     /* background: cover radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(102,9,121,1) 13%, rgba(9,9,80,1) 37%); */
-
+    position: relative;
     background-color: #001220;
 }
 
@@ -26,24 +26,31 @@ strong {
     justify-content:space-around;
 }
 
-/* .field {
-    height: auto;
-    width: 500px;
-    padding: 5px;
-    border-radius: 25px;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(60,12,107,1) 10%, rgba(0,18,32,1) 100%);
-} */
+.field {
+    max-width: 800px;
+}
 
 .field_title {
     text-align: center;
 }
 
 .svg-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    max-height: 25%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-svg {
-    max-height: 25%;
+.svg-container svg {
+    position: relative;
+    display: block;
+    width: calc(200% + 1.3px);
+    height: 150px;
+}
+
+.svg-container .shape-fill {
+    fill: #56208A;
 }
