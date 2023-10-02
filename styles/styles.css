@@ -11,8 +11,17 @@ body {
     background-color: #001220;
 }
 
+/* header {
+    display: inline-flex;
+    align-items: center;
+} */
+
 strong {
     color: #9465c4;
+}
+
+#header_logo {
+    width: 400px;
 }
 
 .grid-container {
@@ -24,7 +33,9 @@ strong {
 }
 
 .grid-wide {
-    grid-column: 2/4;
+    grid-column: 2/ span 2;
+    margin: auto;
+    max-width: 800px;
 }
 
 .nav-heading {
