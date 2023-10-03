@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/light.css" />
+
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +17,12 @@
 <body>
   <header>
     <h1>Timothy Watters</h1>
-    <img id="header_logo" src="assets/logo_large_pale.png" alt="large logo">
-    
   </header>
 
+  <img id="header_logo" src="assets/logo_large_pale.png" alt="large logo">
+
   <div class="grid-container">
-    <aside>
+    <aside id="menu">
       <a href="#personal_game_projects">Personal Game Projects</a>
     </aside>
     <div class="grid-wide">
@@ -41,16 +43,22 @@
 
     <div class="grid-right row-3">
       <h2>Coin Dash</h2>
-      <p>I call this first project Coin Dash. It was created in <strong>Godot</strong> using <strong>GDScript</strong>.
+      <p>I call this first project Coin Dash. It was created in <strong>Godot</strong> using <strong>GDScript</strong>. <br>
         To get started with this engine, I followed a course by Packt. The assets are not my own, being taken from Packt
         resources. Even though I began by following a course, the course was out of date with the current version of
         Godot at the time that I decided to embark on my journey. I also made variations to the original code in ways I
         believed improved the original gameplay. I had to develop fundemental game coding skills in this project.</p>
     </div>
     <div class="grid-left row-3">
-      <img
-        src="https://cc-prod.scene7.com/is/image/CCProdAuthor/What-is-Stock-Photography_P1_mobile?$pjpeg$&jpegSize=200&wid=720"
-        alt="placeholder image of a dog">
+      <sl-carousel pagination mouse-dragging loop>
+        <sl-carousel-item>
+          <img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/What-is-Stock-Photography_P1_mobile?$pjpeg$&jpegSize=200&wid=720" alt="placeholder image of a dog">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/What-is-Stock-Photography_P1_mobile?$pjpeg$&jpegSize=200&wid=720" alt="placeholder image of a dog">
+        </sl-carousel-item>
+      </sl-carousel>
+      
     </div>
 
     <div class="grid-break"></div>
@@ -58,7 +66,7 @@
     <div class="grid-left row-5">
       <h2>Escape Maze</h2>
       <p>This next project is called Escape Maze. This was also built in the <strong>Godot</strong> engine using
-        <strong>GDScript</strong>. This was also based on a project by Packt. As such, the assets are not my own.
+        <strong>GDScript</strong>. <br> This was also based on a project by Packt. As such, the assets are not my own.
         Similar to in Coin Dash I took the premise offered by the Packt tutorial and extended it. Trying to find
         creative uses for the different components created an interesting challenge that I enjoyed solving. I learned
         how to use sprite sheets in Godot, and developed my skills in a different work flow, learning how to group
@@ -73,7 +81,7 @@
 
     <div class="grid-right row-7">
       <h2>Space Rocks</h2>
-      <p>Space Rocks was also built in <strong>Godot</strong> using <strong>GDScript</strong>. This project was also
+      <p>Space Rocks was also built in <strong>Godot</strong> using <strong>GDScript</strong>. <br> This project was also
         based on the Godot project book from Packt that the pevious Godot projects were from. As such, the assets aren't
         mine. Moving on to more fun things though, I had a lot of fun with this project. I made sure to follow the book
         less closely with this one to try and practice the skills I'd picked up so far, but to also see how much I could
@@ -91,7 +99,7 @@
     <div class="grid-left row-9">
       <h2>Marble Maze</h2>
       <p>Marble Maze was my first project built in <strong>Unreal</strong>. I used the <strong>Blueprint</strong> system
-        to program it. The system tilts the maze based on mouse movement and got me started with using physics in 3D
+        to program it.<br> The system tilts the maze based on mouse movement and got me started with using physics in 3D
         space. The assets are default assets from the Unreal starter content.</p>
     </div>
     <div class="grid-right row-9">
@@ -104,7 +112,7 @@
 
     <div class="grid-right row-11">
       <h2>Marble Run</h2>
-      <p>Marble Run was also made in <strong>Unreal</strong> using <strong>Blueprint</strong>. The moving camera in the
+      <p>Marble Run was also made in <strong>Unreal</strong> using <strong>Blueprint</strong>. <br>The moving camera in the
         project allowed me to make more interesting choices in the level design. I could also improve my skills in the
         prototyping and rapid mockup of levels when using Unreal. It felt like this project did a lot to refine existing
         skills and practices from previous projects.</p>
@@ -131,6 +139,13 @@
         class="shape-fill"></path>
     </svg>
   </div>
+  <!-- Icons by Pixel Perfect on FreePik -->
+  <div class="social_links">
+    <a href="https://www.instagram.com/timmy.watt14/"><img class="icon" src="assets/instagram_733614.png" alt="instagram icon"></a> 
+    <a href="https://www.tiktok.com/@timwatters7"><img class="icon" src="assets/tik-tok_3046120.png" alt=""></a>
+    <a href="https://github.com/CertNZone"><img class="icon" src="assets/github_733609.png" alt="github icon"></a>
+  </div>
 </body>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/components/carousel/carousel.js"></script>
 
 </html>
