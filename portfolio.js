@@ -1,6 +1,6 @@
-let logo = document.getElementById("header_logo")
-let menu = document.getElementById("menu")
+const menu = document.getElementById("menu")
 
-logo.addEventListener("click", {
-    menu.cla
+document.getElementById("hamburger-container").addEventListener("click", function() {
+    console.log("Clicked")
+    menu.classList.toggle("hidden");
 })
