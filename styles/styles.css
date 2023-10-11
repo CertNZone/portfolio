@@ -24,6 +24,20 @@ strong {
     color: #9465c4;
 }
 
+span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.hamburger {
+    width: 35px;
+height: 5px;
+background-color: #D6C9E3;
+margin: 6px 0;
+border-radius: 25%;
+}
+
 #header_logo {
     width: 400px;
 }
@@ -127,8 +141,13 @@ sl-carousel-item {
     height: 30px;
 }
 
+#menu {
+    transition: transform 1s;
+}
+
 .hidden {
-    left: -220px;
+    transform: translateX(-300px);
+    /* left: -220px; */
 }
 
 @media only screen and (min-width: 992px) {
@@ -138,6 +157,10 @@ sl-carousel-item {
         width: 100%;
         gap: 10px;
         text-align: center;
+    }
+
+    #hamburger-container {
+        display: none;
     }
 }
 
@@ -173,10 +196,19 @@ sl-carousel-item {
     #header_logo {
         position: fixed;
         top: 0;
-        left: -20px;
+        right: -20px;
         z-index: 5;
         max-width: 150px;
-        
+    }
+
+    #menu {
+        text-align: right;
+        position: absolute;
+        padding: 5px;
+        width: 300px;
+        top: 88px;
+        left: 0px;
+        background-color: #56208A;
     }
 }
 
