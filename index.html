@@ -3,30 +3,172 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/light.css" />
+
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo_small.png" type="png">
 
-  <title>Timothy Watters</title>
+  <title>Timothy Watters | Game Development Portfolio</title>
 </head>
 
 <body>
   <header>
-
+    <span id="hamburger-container">
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+    </span>
     <h1>Timothy Watters</h1>
   </header>
-  <div class="flex-container">
-    <div class="field">
-      <p>Hi! My name is Tim Watters, and I'm a game design and development enthusiast. I'm about to finish my
-        degree in Animation and Game Design from Curtin University, and I'm ready to move on to bigger projects.
+
+  <img id="header_logo" src="assets/logo_large_pale.png" alt="large logo">
+
+  <div class="grid-container">
+    <aside id="menu">
+      <a href="#personal_game_projects">Personal Game Projects</a>
+    </aside>
+    <div class="grid-wide">
+      <p>Hi! I'm Tim Watters, and I'm a game design and development enthusiast. I'm about to finish my
+        bachelors degree in Animation and Game Design from Curtin University, and I'm ready to move on to bigger
+        projects.
         Below you'll find an assortment of my personal projects, built using different engines such as the
         <strong>Unreal</strong> and <strong>Godot</strong> engines. I've also done some 3D work in
         <strong>Blender</strong> and in <strong>Maya</strong>. I also have some programming experience in
-        <strong>Java</strong>, <strong>C#</strong>, and <strong>C++</strong>.
+        <strong>Java</strong>, <strong>C#</strong>, and <strong>C++</strong>. And lastly I coded this website! So
+        I'm familiar HTML, CSS, and <strong>JavaScript</strong>.
       </p>
     </div>
+
+    <div class="grid-wide nav-heading" id="personal_game_projects">
+      <h1>Personal Game Projects</h1>
+    </div>
+
+    <div class="grid-right row-3">
+      <h2>Coin Dash</h2>
+      <p>I call this first project Coin Dash. It was created in <strong>Godot</strong> using <strong>GDScript</strong>. <br>
+        To get started with this engine, I followed a course by Packt. The assets are not my own, being taken from Packt
+        resources. Even though I began by following a course, the course was out of date with the current version of
+        Godot at the time that I decided to embark on my journey. I also made variations to the original code in ways I
+        believed improved the original gameplay. I had to develop fundemental game coding skills in this project.</p>
+    </div>
+    <div class="grid-left row-3">
+      <sl-carousel pagination mouse-dragging loop>
+        <sl-carousel-item>
+          <img src="assets/coin_dash/coin_dash_3.png" alt="coin dash menu">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/coin_dash/coin_dash_1.png" alt="screenshot from coin dash">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/coin_dash/coin_dash_2.png" alt="screenshot from coin dash">
+        </sl-carousel-item>
+      </sl-carousel>
+      
+    </div>
+
+    <div class="grid-break"></div>
+
+    <div class="grid-left row-5">
+      <h2>Jungle Jump</h2>
+      <p>This next project is called Jungle Jump. This was also built in the <strong>Godot</strong> engine using
+        <strong>GDScript</strong>. <br> This was also based on a project by Packt. As such, the assets are not my own.
+        Similar to in Coin Dash I took the premise offered by the Packt tutorial and extended it. Trying to find
+        creative uses for the different components created an interesting challenge that I enjoyed solving. This project taught me the basics of 2D physics required to make a platformer.
+      </p>
+    </div>
+    <div class="grid-right row-5">
+      <sl-carousel pagination mouse-dragging loop>
+        <sl-carousel-item>
+          <img src="assets/jungle_jump/jungle_jump_1.png" alt="jungle jump menu">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/jungle_jump/jungle_jump_2.png" alt="screenshot from jungle jump">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/jungle_jump/jungle_jump_3.png" alt="screenshot from jungle jump">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/jungle_jump/jungle_jump_4.png" alt="screenshot from jungle jump">
+        </sl-carousel-item>
+      </sl-carousel>
+      </div>
+
+    <div class="grid-break"></div>
+
+    <div class="grid-right row-7">
+      <h2>Space Rocks</h2>
+      <p>Space Rocks was also built in <strong>Godot</strong> using <strong>GDScript</strong>. <br> This project was also
+        based on the Godot project book from Packt that the pevious Godot projects were from. As such, the assets aren't
+        mine. Moving on to more fun things though, I had a lot of fun with this project. I made sure to follow the book
+        less closely with this one to try and practice the skills I'd picked up so far, but to also see how much I could
+        figure out from subheadings. This project was very fun, and I learned a lot in 2D physics while developing this
+        game.</p>
+    </div>
+    <div class="grid-left row-7">
+      <sl-carousel pagination mouse-dragging loop>
+        <sl-carousel-item>
+          <img src="assets/space_rocks/space_rocks_1.png" alt="space rocks menu">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/space_rocks/space_rocks_2.png" alt="space rocks menu">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/space_rocks/space_rocks_3.png" alt="space rocks menu">
+        </sl-carousel-item>
+      </sl-carousel>
+    </div>
+
+    <div class="grid-break"></div>
+
+    <div class="grid-left row-9">
+      <h2>Marble Maze</h2>
+      <p>Marble Maze was my first project built in <strong>Unreal</strong>. I used the <strong>Blueprint</strong> system
+        to program it.<br> The system tilts the maze based on mouse movement and got me started with using physics in 3D
+        space. The assets are default assets from the Unreal starter content.</p>
+    </div>
+    <div class="grid-right row-9">
+      <sl-carousel pagination mouse-dragging loop>
+        <sl-carousel-item>
+          <img src="assets/marble_maze/marble_maze_1.png" alt="screenshot from marble maze game">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/marble_maze/marble_maze_2.png" alt="screenshot from marble maze game">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/marble_maze/marble_maze_3.png" alt="screenshot from marble maze game">
+        </sl-carousel-item>
+      </sl-carousel>
+    </div>
+
+    <div class="grid-break"></div>
+
+    <div class="grid-right row-11">
+      <h2>Marble Run</h2>
+      <p>Marble Run was also made in <strong>Unreal</strong> using <strong>Blueprint</strong>. <br>The moving camera in the
+        project allowed me to make more interesting choices in the level design. I could also improve my skills in the
+        prototyping and rapid mockup of levels when using Unreal. It felt like this project did a lot to refine existing
+        skills and practices from previous projects.</p>
+    </div>
+    <div class="grid-left row-11">
+      <sl-carousel pagination mouse-dragging loop>
+        <sl-carousel-item>
+          <img src="assets/marble_run/marble_run_1.png" alt="screenshot from marble maze game">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/marble_run/marble_run_2.png" alt="screenshot from marble maze game">
+        </sl-carousel-item>
+        <sl-carousel-item>
+          <img src="assets/marble_run/marble_run_3.png" alt="screenshot from marble maze game">
+        </sl-carousel-item>
+      </sl-carousel>
+    </div>
+
+    <div class="grid-end"></div>
   </div>
+
   <div class="svg-container">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
       <path
@@ -40,6 +182,17 @@
         class="shape-fill"></path>
     </svg>
   </div>
+  <!-- Icons by Pixel Perfect on FreePik -->
+  <div class="social_links">
+    <a href="https://www.instagram.com/timmy.watt14/"><img class="icon" src="assets/instagram_733614.png" alt="instagram icon"></a> 
+    <a href="https://www.tiktok.com/@timwatters7"><img class="icon" src="assets/tik-tok_3046120.png" alt=""></a>
+    <a href="https://github.com/CertNZone"><img class="icon" src="assets/github_733609.png" alt="github icon"></a>
+  </div>
+
+  <!-- The dog that got this project done: https://cc-prod.scene7.com/is/image/CCProdAuthor/What-is-Stock-Photography_P1_mobile?$pjpeg$&jpegSize=200&wid=720 -->
 </body>
+
+<script src="portfolio.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/components/carousel/carousel.js"></script>
 
 </html>
