@@ -26,9 +26,11 @@
 
   <img id="header_logo" src="assets/logo_large_pale.png" alt="large logo">
 
+  <!-- Biography -->
   <div class="grid-container">
     <aside id="menu">
-      <a href="#personal_game_projects">Personal Game Projects</a>
+      <a href="#personal_game_projects">Personal Game Projects</a><br>
+      <a href="#game_testing">Game Testing</a>
     </aside>
     <div class="grid-wide">
       <p>Hi! I'm Tim Watters, and I'm a game design and development enthusiast. I'm about to finish my
@@ -41,20 +43,31 @@
         I'm familiar HTML, CSS, and <strong>JavaScript</strong>.
       </p>
     </div>
+    <div style="grid-row: 2; grid-column: 2/span 2;">
+      <iframe src="https://player.vimeo.com/video/878259611?badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;app_id=58479" width="360px" height="640px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Short Show Reel"></iframe>
+    </div>
 
+  </div>
+
+  
+
+
+  <!-- Personal projects -->
+  <div class="grid-container">
     <div class="grid-wide nav-heading" id="personal_game_projects">
       <h1>Personal Game Projects</h1>
     </div>
 
     <div class="grid-right row-3">
       <h2>Coin Dash</h2>
-      <p>I call this first project Coin Dash. It was created in <strong>Godot</strong> using <strong>GDScript</strong>. <br>
+      <p>I call this first project Coin Dash. It was created in <strong>Godot</strong> using <strong>GDScript</strong>.
+        <br>
         To get started with this engine, I followed a course by Packt. The assets are not my own, being taken from Packt
         resources. Even though I began by following a course, the course was out of date with the current version of
         Godot at the time that I decided to embark on my journey. I also made variations to the original code in ways I
         believed improved the original gameplay. I had to develop fundemental game coding skills in this project.</p>
     </div>
-    <div class="grid-left row-3">
+    <div class="grid-left" style="grid-row: 2;">
       <sl-carousel pagination mouse-dragging loop>
         <sl-carousel-item>
           <img src="assets/coin_dash/coin_dash_3.png" alt="coin dash menu">
@@ -66,20 +79,21 @@
           <img src="assets/coin_dash/coin_dash_2.png" alt="screenshot from coin dash">
         </sl-carousel-item>
       </sl-carousel>
-      
+
     </div>
 
-    <div class="grid-break"></div>
+    <div class="grid-break" style="grid-row: 3;"></div>
 
-    <div class="grid-left row-5">
+    <div class="grid-left" style="grid-row: 4;">
       <h2>Jungle Jump</h2>
       <p>This next project is called Jungle Jump. This was also built in the <strong>Godot</strong> engine using
         <strong>GDScript</strong>. <br> This was also based on a project by Packt. As such, the assets are not my own.
         Similar to in Coin Dash I took the premise offered by the Packt tutorial and extended it. Trying to find
-        creative uses for the different components created an interesting challenge that I enjoyed solving. This project taught me the basics of 2D physics required to make a platformer.
+        creative uses for the different components created an interesting challenge that I enjoyed solving. This project
+        taught me the basics of 2D physics required to make a platformer.
       </p>
     </div>
-    <div class="grid-right row-5">
+    <div class="grid-right" style="grid-row: 4;">
       <sl-carousel pagination mouse-dragging loop>
         <sl-carousel-item>
           <img src="assets/jungle_jump/jungle_jump_1.png" alt="jungle jump menu">
@@ -94,20 +108,21 @@
           <img src="assets/jungle_jump/jungle_jump_4.png" alt="screenshot from jungle jump">
         </sl-carousel-item>
       </sl-carousel>
-      </div>
+    </div>
 
-    <div class="grid-break"></div>
+    <div class="grid-break" style="grid-row: 5;"></div>
 
-    <div class="grid-right row-7">
+    <div class="grid-right" style="grid-row: 6;">
       <h2>Space Rocks</h2>
-      <p>Space Rocks was also built in <strong>Godot</strong> using <strong>GDScript</strong>. <br> This project was also
+      <p>Space Rocks was also built in <strong>Godot</strong> using <strong>GDScript</strong>. <br> This project was
+        also
         based on the Godot project book from Packt that the pevious Godot projects were from. As such, the assets aren't
         mine. Moving on to more fun things though, I had a lot of fun with this project. I made sure to follow the book
         less closely with this one to try and practice the skills I'd picked up so far, but to also see how much I could
         figure out from subheadings. This project was very fun, and I learned a lot in 2D physics while developing this
         game.</p>
     </div>
-    <div class="grid-left row-7">
+    <div class="grid-left" style="grid-row: 6;">
       <sl-carousel pagination mouse-dragging loop>
         <sl-carousel-item>
           <img src="assets/space_rocks/space_rocks_1.png" alt="space rocks menu">
@@ -121,15 +136,15 @@
       </sl-carousel>
     </div>
 
-    <div class="grid-break"></div>
+    <div class="grid-break" style="grid-row: 7;"></div>
 
-    <div class="grid-left row-9">
+    <div class="grid-left" style="grid-row: 8;">
       <h2>Marble Maze</h2>
       <p>Marble Maze was my first project built in <strong>Unreal</strong>. I used the <strong>Blueprint</strong> system
         to program it.<br> The system tilts the maze based on mouse movement and got me started with using physics in 3D
         space. The assets are default assets from the Unreal starter content.</p>
     </div>
-    <div class="grid-right row-9">
+    <div class="grid-right" style="grid-row: 8;">
       <sl-carousel pagination mouse-dragging loop>
         <sl-carousel-item>
           <img src="assets/marble_maze/marble_maze_1.png" alt="screenshot from marble maze game">
@@ -143,16 +158,17 @@
       </sl-carousel>
     </div>
 
-    <div class="grid-break"></div>
+    <div class="grid-break" style="grid-row: 9;"></div>
 
-    <div class="grid-right row-11">
+    <div class="grid-right" style="grid-row: 10;">
       <h2>Marble Run</h2>
-      <p>Marble Run was also made in <strong>Unreal</strong> using <strong>Blueprint</strong>. <br>The moving camera in the
+      <p>Marble Run was also made in <strong>Unreal</strong> using <strong>Blueprint</strong>. <br>The moving camera in
+        the
         project allowed me to make more interesting choices in the level design. I could also improve my skills in the
         prototyping and rapid mockup of levels when using Unreal. It felt like this project did a lot to refine existing
         skills and practices from previous projects.</p>
     </div>
-    <div class="grid-left row-11">
+    <div class="grid-left" style="grid-row: 10;">
       <sl-carousel pagination mouse-dragging loop>
         <sl-carousel-item>
           <img src="assets/marble_run/marble_run_1.png" alt="screenshot from marble maze game">
@@ -164,6 +180,37 @@
           <img src="assets/marble_run/marble_run_3.png" alt="screenshot from marble maze game">
         </sl-carousel-item>
       </sl-carousel>
+    </div>
+  </div>
+
+  <!-- Game Testing -->
+  <div class="grid-container">
+    <div class="grid-wide nav-heading" id="game_testing">
+      <h1>Game Testing</h1>
+    </div>
+
+    <div class="grid-right" style="grid-row: 2;">
+      <h2>13th Age 2e Playtest</h2>
+      <p>My gaming interests spread to tabletop as well. Towards the end of 2022, I got the opportunity to participate
+        in the playtest for the second edition of the TTRPG 13th Age. The format of the test was to email a specified
+        email address with our feedback after running some test sessions.</p>
+    </div>
+    <div class="grid-left" style="grid-row: 2;">
+      <img width="200px" height="200px" src="https://th.bing.com/th/id/R.69774f3ffa92080b97a7bf095d58f348?rik=twAFK81Ey59vZw&riu=http%3a%2f%2fsite.pelgranepress.com%2ffiles%2f13th_Age%2f13thagecompatible.png&ehk=EpJnvVBdbfi1EwzoZQ%2fQNXmkelGgSGk%2bnWN7%2btswHSY%3d&risl=&pid=ImgRaw&r=0" alt="13th age emblem">
+    </div>
+
+    <div class="grid-break" style="grid-row: 3;"></div>
+
+    <div class="grid-left" style="grid-row: 4;">
+      <h2>Tekken 8 CBT</h2>
+      <p>I recently was one of the fortunate people who received a code to participate in the Tekken 8 Closed Beta Test.
+        It ran from October 20th to October 23rd, and I had a great time. After three days of participating in the beta
+        Bandai Namco sent out survey emails to collect peoples thought and experiences on the beta.</p>
+    </div>
+    <div class="grid-right" style="grid-row: 4;">
+      <img
+        src="assets/tekken-8-landing-page.png"
+        alt="">
     </div>
 
     <div class="grid-end"></div>
@@ -182,11 +229,15 @@
         class="shape-fill"></path>
     </svg>
   </div>
+
   <!-- Icons by Pixel Perfect on FreePik -->
   <div class="social_links">
-    <a href="https://www.instagram.com/timwattersgames/" target="_blank"><img class="icon" src="assets/instagram_733614.png" alt="instagram icon"></a> 
-    <a href="https://www.tiktok.com/@timwattersgames" target="_blank"><img class="icon" src="assets/tik-tok_3046120.png" alt=""></a>
-    <a href="https://github.com/CertNZone" target="_blank"><img class="icon" src="assets/github_733609.png" alt="github icon"></a>
+    <a href="https://www.instagram.com/timwattersgames/" target="_blank"><img class="icon"
+        src="assets/instagram_733614.png" alt="instagram icon"></a>
+    <a href="https://www.tiktok.com/@timwattersgames" target="_blank"><img class="icon" src="assets/tik-tok_3046120.png"
+        alt=""></a>
+    <a href="https://github.com/CertNZone" target="_blank"><img class="icon" src="assets/github_733609.png"
+        alt="github icon"></a>
   </div>
 
   <!-- The dog that got this project done: https://cc-prod.scene7.com/is/image/CCProdAuthor/What-is-Stock-Photography_P1_mobile?$pjpeg$&jpegSize=200&wid=720 -->
