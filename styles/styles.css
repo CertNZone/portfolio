@@ -72,30 +72,6 @@ border-radius: 25%;
     height: 30vh;
 }
 
-.row-3 {
-    grid-row: 3;
-}
-
-.row-5 {
-    grid-row: 5;
-}
-
-.row-7 {
-    grid-row: 7;
-}
-
-.row-9 {
-    grid-row: 9;
-}
-
-.row-11 {
-    grid-row: 11;
-}
-
-.row-13 {
-    grid-row: 13;
-}
-
 img {
     max-width: 100%;
     max-height: 100%;
